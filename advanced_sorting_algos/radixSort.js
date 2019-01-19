@@ -38,10 +38,7 @@ function radixSort(arr) {
   let mostDigits = maxDigits(arr)
 
   function initBucket() {
-    bucket = Array(10).fill(null)
-    for(let key in bucket) {
-        bucket[key] = []
-    }
+    bucket = Array.from({ length: 10}, () => [])
   }
 
   initBucket()
