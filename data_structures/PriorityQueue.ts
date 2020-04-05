@@ -7,7 +7,7 @@ class PNode {
   }
 }
 
-class PriorityQueue {
+export class PriorityQueue {
   values: PNode[]
 
   constructor() {
