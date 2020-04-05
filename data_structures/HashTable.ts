@@ -63,7 +63,7 @@ class HashTable {
 
   values(): any[] {
     const result = []
-    let chain: Pair[]
+    let chain: void | Pair[]
     for (let i = 0; i < this.size; i++) {
       chain = this.keyMap[i]
       if (!chain) continue
